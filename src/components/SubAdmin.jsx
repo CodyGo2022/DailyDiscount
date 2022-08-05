@@ -9,14 +9,14 @@ const Dashboard = () => {
         <div className="flex flex-col w-[80%] 3xl:w-[90%] 2xl:w-[95%] lg:items-center m-auto">
 
             {/* Title */}
-            <div className=" flex mt-[80px] items-center gap-5">
+            <div className=" flex lg:w-full sm:flex-wrap lg:justify-center mt-[80px] items-center gap-5">
                 <HiOutlineUserGroup size={30} color="#7F8DA1"/> 
-                <h1 className="font-semibold text-[1.75rem]"><span className="text-[#7F8DA1]">Administrator / </span> Sub-Admin</h1>
+                <h1 className="font-semibold sm:text-[1.3rem] text-[1.75rem]"><span className="text-[#7F8DA1]">Administrator / </span> Sub-Admin</h1>
             </div>
 
             {/* Show / Results */}
 
-            <div className="flex justify-between mt-[124px]">
+            <div className="flex lg:w-full lg:flex-col lg:items-center lg:gap-2 sm:w-full lg:mt-[55px] justify-between mt-[124px]">
                 <div className="flex w-[14.188rem] h-[2.375rem] bg-[#FFFFFF] items-center justify-center rounded-[5px]">
                     <p className="text-[0.875rem] text-[#656161]">Showing 1 - 7 of 20 Results</p>
                 </div>
@@ -37,15 +37,15 @@ const Dashboard = () => {
             </div>
 
             {/* Table */}
-            <div className="mt-[21px]">
+            <div className="mt-[21px] w-full">
                 <table className="w-[100%] table-auto">
                     <thead>
                         <tr>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Email</td>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Username</td>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Phone No.</td>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Date</td>
-                            <th className="font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000]">Action</th>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Email</td>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Username</td>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Phone No.</td>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Date</td>
+                            <th className="font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000]">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -54,35 +54,35 @@ const Dashboard = () => {
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">Jomar</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center gap-5 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} fill='#0500FF'/><FaTrashAlt size={25} fill='#F13B1F'/></td>
+                            <td className="flex justify-center gap-5 sm:gap-2 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} className="item" fill='#0500FF'/><FaTrashAlt size={25} className="item" fill='#F13B1F'/></td>
                         </tr>
                         <tr>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">J@gmail.com</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">Jomar</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center gap-5 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} fill='#0500FF'/><FaTrashAlt size={25} fill='#F13B1F'/></td>
+                            <td className="flex justify-center gap-5 sm:gap-2 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} className="item" fill='#0500FF'/><FaTrashAlt size={25} className="item" fill='#F13B1F'/></td>
                         </tr>
                         <tr>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">J@gmail.com</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">Jomar</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center gap-5 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} fill='#0500FF'/><FaTrashAlt size={25} fill='#F13B1F'/></td>
+                            <td className="flex justify-center gap-5 sm:gap-2 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} className="item" fill='#0500FF'/><FaTrashAlt size={25} className="item" fill='#F13B1F'/></td>
                         </tr>
                         <tr>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">J@gmail.com</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">Jomar</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center gap-5 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} fill='#0500FF'/><FaTrashAlt size={25} fill='#F13B1F'/></td>
+                            <td className="flex justify-center gap-5 sm:gap-2 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} className="item" fill='#0500FF'/><FaTrashAlt size={25} className="item" fill='#F13B1F'/></td>
                         </tr>
                         <tr>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">J@gmail.com</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">Jomar</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center gap-5 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} fill='#0500FF'/><FaTrashAlt size={25} fill='#F13B1F'/></td>
+                            <td className="flex justify-center gap-5 sm:gap-2 text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]"><TiEdit size={28} className="item" fill='#0500FF'/><FaTrashAlt size={25} className="item" fill='#F13B1F'/></td>
                         </tr>
                     </tbody>
                 </table>
@@ -91,12 +91,12 @@ const Dashboard = () => {
             {/* Prev / Next */}
             <div className="flex w-full justify-between mt-[50px]">
                 <div className="flex items-center justify-center border-solid border-[0.5px] border-[#000000] bg-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,0,0,0.21)] rounded-[9px]">
-                    <p className="font-semibold text-[1.375rem] p-2">+ Add New Admin</p>
+                    <button className="font-semibold sm:text-[.8rem] text-[1.375rem] p-2 sm:p-1">+ Add New Admin</button>
                 </div>
                 <div className="flex">
-                    <button className="flex items-center justify-center text-[1rem] h-[42px] px-4 bg-[#C3C6C9] rounded-[4px]">Prev</button>
-                    <p className="flex items-center justify-center text-[1rem] px-3 h-[42px] py-1 bg-[#FFFFFF]">1</p>
-                    <button className="flex items-center justify-center text-[1rem] h-[42px] px-4 bg-[#C3C6C9] rounded-[4px]">Next</button>
+                    <button className="flex items-center justify-center sm:text-[.8rem] text-[1rem] h-[42px] px-4 sm:px-3 bg-[#C3C6C9] rounded-[4px]">Prev</button>
+                    <p className="flex items-center justify-center sm:text-[.8rem] text-[1rem] px-3 h-[42px] py-1 sm:py-0 bg-[#FFFFFF]">1</p>
+                    <button className="flex items-center justify-center sm:text-[.8rem] text-[1rem] h-[42px] px-4 sm:px-3 bg-[#C3C6C9] rounded-[4px]">Next</button>
                 </div>
             </div>
         </div>

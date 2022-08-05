@@ -7,14 +7,14 @@ const Dashboard = () => {
         <div className="flex flex-col w-[80%] 3xl:w-[90%] 2xl:w-[95%] lg:items-center m-auto">
 
             {/* Title */}
-            <div className=" flex mt-[80px] items-center gap-5">
+            <div className=" flex lg:w-full sm:flex-wrap lg:justify-center mt-[80px] items-center gap-5">
                 <HiOutlineUsers size={30} color="#7F8DA1"/> 
-                <h1 className="font-semibold text-[1.75rem]"><span className="text-[#7F8DA1]">Customers / </span> Manage Users</h1>
+                <h1 className="font-semibold sm:text-[1.3rem] text-[1.75rem]"><span className="text-[#7F8DA1]">Customers / </span> Manage Users</h1>
             </div>
 
             {/* Show / Results */}
 
-            <div className="flex justify-between mt-[124px]">
+            <div className="flex lg:w-full lg:flex-col lg:items-center lg:gap-2 sm:w-full lg:mt-[55px] justify-between mt-[124px]">
                 <div className="flex w-[14.188rem] h-[2.375rem] bg-[#FFFFFF] items-center justify-center rounded-[5px]">
                     <p className="text-[0.875rem] text-[#656161]">Showing 1 - 7 of 20 Results</p>
                 </div>
@@ -35,15 +35,15 @@ const Dashboard = () => {
             </div>
 
             {/* Table */}
-            <div className="mt-[21px]">
+            <div className="mt-[21px] w-full">
                 <table className="w-[100%] table-auto">
                     <thead>
                         <tr>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Email</td>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Products</td>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Phone No.</td>
-                            <td className="relative font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Date</td>
-                            <th className="font-semibold text-[1.563rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000]">Action</th>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Email</td>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Username</td>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Phone No.</td>
+                            <td className="relative font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000] arrow-down">Date</td>
+                            <th className="font-semibold text-[1.563rem] lg:text-[1.2rem] sm:text-[0.5rem] text-[#302F2F] p-3 border-solid border-[1px] border-[#000000]">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -52,9 +52,9 @@ const Dashboard = () => {
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">YSS - Fleet Warden</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center items-center p-2">
-                                <select name="" id="" className="p-2 rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
-                                    <option value="" disabled selected>Choose Action</option>
+                            <td className="flex justify-center sm:text-[0.5rem]  items-center p-2">
+                                <select defaultValue="Choose Action" name="" id="" className="p-2 lg:w-full rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
+                                    <option value="Choose Action" disabled>Choose Action</option>
                                     <option value="">Delete</option>
                                     <option value="">Block User</option>
                                 </select>
@@ -65,9 +65,9 @@ const Dashboard = () => {
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">YSS - Fleet Warden</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center items-center p-2">
-                                <select name="" id="" className="p-2 rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
-                                    <option value="" disabled selected>Choose Action</option>
+                            <td className="flex justify-center sm:text-[0.5rem]  items-center p-2">
+                                <select defaultValue="Choose Action" name="" id="" className="p-2 lg:w-full rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
+                                    <option value="Choose Action" disabled>Choose Action</option>
                                     <option value="">Delete</option>
                                     <option value="">Block User</option>
                                 </select>
@@ -78,9 +78,9 @@ const Dashboard = () => {
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">YSS - Fleet Warden</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center items-center p-2">
-                                <select name="" id="" className="p-2 rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
-                                    <option value="" disabled selected>Choose Action</option>
+                            <td className="flex justify-center sm:text-[0.5rem]  items-center p-2">
+                                <select defaultValue="Choose Action" name="" id="" className="p-2 lg:w-full rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
+                                    <option value="Choose Action" disabled>Choose Action</option>
                                     <option value="">Delete</option>
                                     <option value="">Block User</option>
                                 </select>
@@ -91,9 +91,9 @@ const Dashboard = () => {
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">YSS - Fleet Warden</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center items-center p-2">
-                                <select name="" id="" className="p-2 rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
-                                    <option value="" disabled selected>Choose Action</option>
+                            <td className="flex justify-center sm:text-[0.5rem]  items-center p-2">
+                                <select defaultValue="Choose Action" name="" id="" className="p-2 lg:w-full rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
+                                    <option value="Choose Action" disabled>Choose Action</option>
                                     <option value="">Delete</option>
                                     <option value="">Block User</option>
                                 </select>
@@ -104,9 +104,9 @@ const Dashboard = () => {
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">YSS - Fleet Warden</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">09654789654</td>
                             <td className="text-[1.125] sm:text-[0.5rem] text-[#4F4B4B] p-3 border-solid border-b-[1px] border-[#EEF0F2]">July 4 2022</td>
-                            <td className="flex justify-center items-center p-2">
-                                <select name="" id="" className="p-2 rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
-                                    <option value="" disabled selected>Choose Action</option>
+                            <td className="flex justify-center sm:text-[0.5rem] items-center p-2">
+                                <select defaultValue="Choose Action" name="" id="" className="p-2 lg:w-full rounded-[5px] outline-none shadow-[0px_4px_4px_rgba(216,214,214,0.7)]">
+                                    <option value="Choose Action" disabled>Choose Action</option>
                                     <option value="">Delete</option>
                                     <option value="">Block User</option>
                                 </select>

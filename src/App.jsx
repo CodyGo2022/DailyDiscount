@@ -48,7 +48,7 @@ const App = () => {
                         handleClick={handleClick}
                     />
                 </div>
-                <div className="w-full min-h-screen">
+                <div className="w-full min-h-[85%]">
                     
                         <Routes>
                             <Route path="/" element={<Dashboard />}/>
@@ -62,7 +62,7 @@ const App = () => {
                             <Route path="/Payments/PaymentDetails" element={<PaymentDetails />} />
                         </Routes>
                 </div>
-                <div className="flex flex-column w-full h-[8%] xl:mt-[20px]">
+                <div className="flex flex-column w-full h-[8%] xl:mt-[20px] sm:mt-[10px]">
                     <Footer />
                 </div>
             </div>

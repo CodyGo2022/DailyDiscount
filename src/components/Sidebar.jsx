@@ -14,7 +14,7 @@ const Sidebar = ({toggle}) => {
     return (
         <div className={toggle ? "" : "w-[230px]"}>
         {   toggle ?
-            <div className="fixed w-[30%] lg:w-[33%] md:w-[40%] sm:w-[55%] h-full py-2 bg-[#333840]">
+            <div className="fixed z-10 w-[30%] lg:w-[33%] md:w-[40%] sm:w-[55%] h-full py-2 bg-[#333840]">
             {/* Content */}
             <div className="flex flex-col w-[100%]">
                 {/* img LOGO */}
